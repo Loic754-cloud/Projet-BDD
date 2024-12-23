@@ -3,7 +3,7 @@
 
 <head>
     <title>Créer un partenaire et un contact</title>
-    <link rel="stylesheet" type="text/css" href="../style2.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
 </head>
 
 <body>
