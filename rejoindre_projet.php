@@ -3,14 +3,14 @@
 
 <head>
     <title>Rejoindre un Projet</title>
-    <link rel="stylesheet" href="../style2.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
     <h2>Rejoindre un Projet</h2>
 
     <?php
-    include("../connexion.php");
+    include("connexion.php");
     $connexion = connect();
 
     if (!$connexion) {
