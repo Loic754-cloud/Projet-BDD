@@ -11,7 +11,7 @@
     <h2>Créer un partenaire</h2>
 
     <?php
-    include("../connexion.php");
+    include("connexion.php");
     $con = connect();
 
     if (!$con) {
