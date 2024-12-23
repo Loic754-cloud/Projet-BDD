@@ -4,14 +4,14 @@
 <head>
 
     <title>Rejoindre une tâche</title>
-    <link rel="stylesheet" href="../style2.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
     <h2>Ajouter une personne à une tâche avec un rôle</h2>
 
     <?php
-    include("../connexion.php");
+    include("connexion.php");
     $con = connect();
 
     if (!$con) {
