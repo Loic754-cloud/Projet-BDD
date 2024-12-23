@@ -1,0 +1,214 @@
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f8; /* Fond clair et apaisant */
+    color: #333; /* Texte sombre pour une meilleure lisibilité */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style pour le titre de la page */
+h2 {
+    text-align: center;
+    color: #6a4c9c; /* Violet clair */
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Style du formulaire */
+form {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fond blanc pour le formulaire */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère autour du formulaire */
+}
+
+/* Style des champs de texte */
+input[type="text"], input[type="date"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc; /* Bordure gris clair pour les champs */
+    font-size: 16px;
+    background-color: #f9f9f9; /* Fond gris clair pour les champs */
+    box-sizing: border-box;
+}
+
+/* Style des champs de texte sur survol */
+input[type="text"]:focus, input[type="date"]:focus, select:focus, textarea:focus {
+    border-color: #6a4c9c; /* Bordure violette au focus */
+    outline: none;
+}
+
+/* Style des boutons */
+input[type="submit"], input[type="reset"], .button {
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto;
+    transition: background-color 0.3s;
+}
+
+/* Effet de survol pour les boutons */
+input[type="submit"]:hover, input[type="reset"]:hover, .button:hover {
+    background-color: #8e44ad; /* Légère variation de la couleur au survol */
+}
+
+/* Bouton "Valider le formulaire" avec taille plus grande et largeur 100% */
+input[type="submit"] {
+    font-size: 18px;
+    padding: 15px 30px;
+    width: 100%;  /* Prend toute la largeur */
+    background-color: #6a4c9c; /* Violet */
+}
+
+input[type="submit"]:hover {
+    background-color: #8e44ad;
+}
+
+/* Boutons "Recommencer" et "Retour" en bleu, même style */
+input[type="reset"], .back-button {
+    font-size: 16px;
+    padding: 12px 20px;
+    background-color: #2980b9; /* Bleu */
+}
+
+input[type="reset"]:hover, .back-button:hover {
+    background-color: #3498db; /* Légère variation au survol */
+}
+
+.back-button {
+    font-size: 16px;
+    padding: 12px 20px;
+    background-color: #2980b9;
+    border-radius: 6px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+/* Styles spécifiques aux liens à l'intérieur des boutons */
+button a, .back-button a {
+    color: white; /* Assurer que le lien dans le bouton est blanc */
+    text-decoration: none; /* Enlever la décoration du lien */
+    font-size: 16px;
+}
+
+button a:hover, .back-button a:hover {
+    color: #f1c40f; /* Changer la couleur du lien en jaune au survol */
+}
+
+/* Style du menu déroulant multiple */
+select[multiple] {
+    height: 150px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Style des liens */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #2980b9; /* Bleu pour les liens */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6a4c9c; /* Violet clair au survol des liens */
+    text-decoration: underline; /* Souligner le lien au survol */
+}
+
+/* Style des labels */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #34495e; /* Couleur gris foncé pour les labels */
+    margin-top: 10px;
+    display: block;
+}
+
+/* Style des messages d'erreur ou de confirmation */
+.success, .error {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.success {
+    color: #27ae60; /* Vert pour les succès */
+}
+
+.error {
+    color: #e74c3c; /* Rouge pour les erreurs */
+}
+
+/* Ajustement des marges pour le formulaire */
+form {
+    margin: 20px auto;
+    max-width: 800px;
+}
+/* Tableau */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    border: 1px solid #cfe2f3; /* Bordures bleu clair */
+    padding: 12px 15px;
+    text-align: center;
+}
+
+table th {
+    background-color: #1a73e8; /* Bleu vif */
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8fbfe; /* Très léger bleu clair */
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+table a {
+    color: #1a73e8; /* Bleu vif */
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Bouton de suppression */
+.delete-btn {
+    background-color: #ff4d4d; /* Rouge vif */
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000; /* Rouge plus foncé */
+}

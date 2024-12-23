@@ -1,0 +1,143 @@
+
+        /* Style général */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f8; /* Fond clair et apaisant */
+            color: #333; /* Texte sombre pour une meilleure lisibilité */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Titres */
+        h2 {
+            text-align: center;
+            color: #6a4c9c; /* Violet clair */
+            font-size: 32px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+
+        /* Centrer le conteneur qui contient les boutons */
+        .center-container {
+            display: flex;
+            justify-content: center;  /* Centre horizontalement */
+            align-items: center;      /* Centre verticalement */
+            flex-direction: column;   /* Aligne les éléments en colonne */
+        }
+
+        /* Boutons et liens principaux */
+        .back-button, .center-container a {
+            display: inline-block;
+            background-color: #2980b9; /* Bleu */
+            color: white; /* Texte blanc */
+            font-size: 18px;
+            padding: 12px 20px;
+            border-radius: 6px; /* Coins arrondis */
+            text-decoration: none; /* Enlever la décoration du lien */
+            margin-bottom: 10px; /* Espacement entre les liens */
+            width: auto;
+            transition: background-color 0.3s ease; /* Transition pour l'effet de survol */
+        }
+
+        /* Effet de survol */
+        .back-button:hover, .center-container a:hover {
+            background-color: #3498db; /* Variation plus claire du bleu au survol */
+            transform: scale(1.05);
+        }
+
+        /* Formulaire */
+        form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px auto;
+        }
+
+        input[type="text"] {
+            width: 50%;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #4a90e2;
+            box-shadow: 0 0 8px rgba(74, 144, 226, 0.5);
+            outline: none;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #4a90e2;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background-color: #357abf;
+            transform: scale(1.05);
+        }
+
+        /* Liste */
+        ul {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        li:hover {
+            transform: translateY(-5px);
+            background-color: #f0f8ff;
+        }
+
+        strong {
+            color: #4a90e2;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 15px 0;
+        }
+
+        .no-results {
+            text-align: center;
+            font-size: 1.5em;
+            color: #999;
+            margin: 20px;
+        }
+
+        /* Responsiveness */
+        @media screen and (max-width: 768px) {
+            a, button, input[type="submit"] {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+
+

@@ -1,0 +1,156 @@
+
+
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f8; /* Fond clair et apaisant */
+    color: #333; /* Texte sombre pour une meilleure lisibilité */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Titres */
+h2{
+    text-align: center;
+    color: #6a4c9c; /* Violet clair */
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+h3{
+    text-align: center;
+    color: #6a4c9c; /* Violet clair */
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Centrer le conteneur qui contient les boutons */
+.center-container {
+    display: flex;
+    justify-content: center;  /* Centre horizontalement */
+    align-items: center;      /* Centre verticalement */
+    flex-direction: column;   /* Aligne les éléments en colonne */
+}
+
+/* Boutons et liens principaux */
+.back-button, .center-container a {
+    display: inline-block;
+    background-color: #2980b9; /* Bleu */
+    color: white; /* Texte blanc */
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 6px; /* Coins arrondis */
+    text-decoration: none; /* Enlever la décoration du lien */
+    margin-bottom: 10px; /* Espacement entre les liens */
+    width: auto;
+    transition: background-color 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+/* Effet de survol */
+.back-button:hover, .center-container a:hover {
+    background-color: #3498db; /* Variation plus claire du bleu au survol */
+    transform: scale(1.05);
+}
+
+.info {
+    text-align: center;
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tableau */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    border: 1px solid #d3e0f0; /* Bordures légères */
+    padding: 12px 15px;
+    text-align: center;
+}
+
+table th {
+    background-color: #0047ab; /* Bleu foncé */
+    color: white;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9fbfd; /* Très léger gris-bleu */
+}
+
+table tr:nth-child(odd) {
+    background-color: white;
+}
+
+.container a {
+    background-color: #0078d7; /* Liens dans tableau */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.container a:hover {
+    background-color: #005bb5; /* Survol des liens dans tableau */
+    transform: scale(1.05);
+}
+
+/* Boutons dans les tableaux */
+.delete-btn {
+    background-color: #ff4d4d; /* Rouge vif pour suppression */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000; /* Rouge plus foncé */
+    transform: scale(1.05);
+}
+
+/* Formulaire */
+input[type="submit"] {
+    background-color: #0078d7;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    a, button, input[type="submit"] {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
