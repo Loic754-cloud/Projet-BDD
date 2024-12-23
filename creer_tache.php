@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Créer une tâche</title>
-    <link rel="stylesheet" type="text/css" href="../style2.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
 </head>
 <body>
 <h2>Créer une tache</h2>
