@@ -3,7 +3,7 @@
 
 <head>
     <title>Menu des projets</title>
-    <link rel="stylesheet" type="text/css" href="../style0.css">
+    <link rel="stylesheet" type="text/css" href="style0.css">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
         </tr>
 
         <?php
-        include("../connexion.php");
+        include("connexion.php");
         $con = connect();
 
         // Requête pour récupérer les projets avec le responsable
