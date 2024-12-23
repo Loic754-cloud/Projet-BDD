@@ -10,7 +10,7 @@
     <h2>Créer un projet</h2>
 
     <?php
-    include("../connexion.php");
+    include("connexion.php");
     $con = connect();
 
     if (!$con) {
