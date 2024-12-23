@@ -2,12 +2,12 @@
 <html>
 <head>
     <title>Détails du partenaire</title>
-    <link rel="stylesheet" type="text/css" href="../style0.css">
+    <link rel="stylesheet" type="text/css" href="style0.css">
 </head>
 
 <body>
     <?php
-    include("../connexion.php");
+    include("connexion.php");
     $con = connect();
     if (!$con) {
         echo "Problème de connexion à la base";
