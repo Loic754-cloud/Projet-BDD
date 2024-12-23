@@ -3,7 +3,7 @@
 
 <head>
     <title>Créer un projet</title>
-    <link rel="stylesheet" type="text/css" href="../style2.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
 </head>
 
 <body>
