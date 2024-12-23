@@ -3,12 +3,12 @@
 
 <head>
     <title>Détails de la personne</title>
-    <link rel="stylesheet" type="text/css" href="../style0.css">
+    <link rel="stylesheet" type="text/css" href="style0.css">
 </head>
 
 <body>
     <?php
-    include("../connexion.php");
+    include("connexion.php");
     $connexion = connect();
     if (!$connexion) {
         echo "Problème de connexion à la base";
